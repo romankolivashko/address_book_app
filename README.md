@@ -1,4 +1,4 @@
-# _{Application Name}_
+# _Address book app_
 
 #### _{Brief description of application}_
 
@@ -9,14 +9,15 @@
 * _HTML_
 * _CSS_
 * _JavaScript_
+* _jQuery
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+_The app is designed to take user input, store it, display it ad delete if needed._
 
 ## Setup/Installation Requirements
 
-* _Run_ `git clone https://github.com/romankolivashko/{app_name}.git`
+* _Run_ `git clone https://github.com/romankolivashko/address_book_app.git`
 * _Open `index.html` file in browser._
 
 ## How to access the app from the web
