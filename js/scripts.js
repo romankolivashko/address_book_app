@@ -79,7 +79,7 @@ function showContact(contactId) {
   $(".physicalWorkAddress").html(contact.workAddress);
   let buttons = $("#buttons");
   buttons.empty();
-  buttons.append("<button class='deleteButton' id=" +  + contact.id + ">Delete</button>");
+  buttons.append("<button class='deleteButton btn btn-danger' id=" +  + contact.id + ">Delete</button>");
 }
 
 
@@ -93,7 +93,8 @@ $(document).ready(function() {
     const inputtedEmail = $("input#new-email").val();
     const inputtedHomeAddress = $("input#new-home-address").val();
     const inputtedWorkAddress = $("input#new-work-address").val();
-    let newContact = new Contact(inputtedFirstName, inputtedLastName, inputtedPhoneNumber, inputtedEmail, inputtedHomeAddress, inputtedWorkAddress);
+    const allEmails = {email1: inputtedEmail, email2: inputtedEmail}
+    let newContact = new Contact(inputtedFirstName, inputtedLastName, inputtedPhoneNumber, inputtedEmail, inputtedHomeAddress, inputtedWorkAddress, allEmails);
     addressBook.addContact(newContact);
     displayContactDetails(addressBook);
   });
