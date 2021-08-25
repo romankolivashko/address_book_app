@@ -82,6 +82,14 @@ function showContact(contactId) {
   buttons.append("<button class='deleteButton btn btn-danger' id=" +  + contact.id + ">Delete</button>");
 }
 
+let contact = new Contact("Ada", "Lovelace", "503-555-0100");
+let contact2 = new Contact("Grace", "Hopper", "503-555-0199");
+addressBook.addContact(contact);
+addressBook.addContact(contact2);
+
+// console.log(addressBook);
+console.log(addressBook.contacts);
+console.log(Object.keys(addressBook.contacts));
 
 $(document).ready(function() {
   attachContactListeners();    // <--- This line is new!
@@ -93,6 +101,11 @@ $(document).ready(function() {
     const inputtedEmail = $("input#new-email").val();
     const inputtedHomeAddress = $("input#new-home-address").val();
     const inputtedWorkAddress = $("input#new-work-address").val();
+
+    $("input#new-first-name").val("");
+    $("input#new-last-name").val("");
+    $("input#new-phone-number").val("");
+    $("input#new-email").val("");
     const allEmails = {email1: inputtedEmail, email2: inputtedEmail}
     let newContact = new Contact(inputtedFirstName, inputtedLastName, inputtedPhoneNumber, inputtedEmail, inputtedHomeAddress, inputtedWorkAddress, allEmails);
     addressBook.addContact(newContact);
