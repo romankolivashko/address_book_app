@@ -1,6 +1,6 @@
 # _Address book app_
 
-#### _{Brief description of application}_
+#### _Simple address book application written in JavaScipt and JQuery
 
 #### By _**Roman Kolivashko**_
 
